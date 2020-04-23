@@ -1,10 +1,12 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
+import BoxPost from '../../components/BoxPost';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
+    <View style={{flex: 1}}>
+      <BoxPost />
+      <BoxPost />
     </View>
   );
 };
