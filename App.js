@@ -1,11 +1,17 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import 'react-native-gesture-handler';
+import {NavigationContainer} from '@react-navigation/native';
+import {StatusBar, Text, View} from 'react-native';
+import CoreStack from './src/routes/CoreStack';
+import Header from './src/components/Header';
 
 const App = () => {
   return (
-    <View>
-      <Text>Teste</Text>
-    </View>
+    <NavigationContainer>
+      <StatusBar backgroundColor="#ffff" barStyle="dark-content" />
+      <Header />
+      <CoreStack />
+    </NavigationContainer>
   );
 };
 
