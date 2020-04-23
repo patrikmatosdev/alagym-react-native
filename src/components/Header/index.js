@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import {IconButton, Colors} from 'react-native-paper';
+import {IconButton} from 'react-native-paper';
 import styles from './styles';
 
 const Header = () => {
