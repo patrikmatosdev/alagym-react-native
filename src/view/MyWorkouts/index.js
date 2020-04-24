@@ -1,12 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import BoxWorkouts from '../../components/BoxWorkouts';
 
 const MyWorkouts = () => {
-  return (
-    <View>
-      <Text>MyWorkouts</Text>
-    </View>
-  );
+  return <BoxWorkouts />;
 };
 
 export default MyWorkouts;
