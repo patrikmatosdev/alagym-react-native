@@ -1,5 +1,4 @@
 import React from 'react';
-import {View} from 'react-native';
 import styles from './styles';
 import {List} from 'react-native-paper';
 import {TouchableOpacity} from 'react-native-gesture-handler';
