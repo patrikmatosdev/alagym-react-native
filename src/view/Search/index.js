@@ -4,7 +4,7 @@ import BoxAcademy from '../../components/BoxAcademy';
 
 const Search = () => {
   return (
-    <View style={{flex: 1, padding: 20}}>
+    <View style={{flex: 1, padding: 20, backgroundColor: '#dddd'}}>
       <BoxAcademy />
     </View>
   );

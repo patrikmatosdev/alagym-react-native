@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, TouchableOpacity} from 'react-native';
 import {IconButton} from 'react-native-paper';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
@@ -7,7 +7,7 @@ import {useNavigation} from '@react-navigation/native';
 const Header = () => {
   const navigation = useNavigation();
 
-  const openSearch = routeName => {
+  const openScreens = routeName => {
     navigation.navigate(routeName);
   };
 
@@ -17,10 +17,12 @@ const Header = () => {
       <View style={styles.containerButtons}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => openSearch('Search')}>
+          onPress={() => openScreens('Search')}>
           <IconButton icon="magnify" size={28} />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          onPress={() => openScreens('Messeger')}
+          style={styles.button}>
           <IconButton icon="forum" size={28} />
         </TouchableOpacity>
       </View>

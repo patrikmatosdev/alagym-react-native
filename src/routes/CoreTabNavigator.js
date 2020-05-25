@@ -5,7 +5,7 @@ import MyWorkouts from '../view/MyWorkouts/index';
 import Home from '../view/Home/index';
 import Store from '../view/Store/index';
 import MySettings from '../view/MySettings/index';
-import CoreStack from './CoreStack';
+// import CoreStack from './CoreStack';
 
 const Tab = createMaterialTopTabNavigator();
 
