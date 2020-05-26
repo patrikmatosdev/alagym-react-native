@@ -14,8 +14,11 @@ const CoreStack = () => {
         options={{
           title: 'AlaGym',
           headerStyle: {
-            backgroundColor: '#ffff',
+            backgroundColor: '#ffffff',
+            elevation: 0,
+            shadowOpacity: 0,
           },
+
           headerRight: () => <HeaderButtons />,
         }}
         name="Home"
@@ -31,7 +34,18 @@ const CoreStack = () => {
         name="Search"
         component={Search}
       />
-      <Stack.Screen name="Messeger" component={MessengerTab} />
+      <Stack.Screen
+        name="Messeger"
+        component={MessengerTab}
+        options={{
+          title: 'Chat',
+          headerStyle: {
+            backgroundColor: '#ffffff',
+            elevation: 0,
+            shadowOpacity: 0,
+          },
+        }}
+      />
     </Stack.Navigator>
   );
 };
