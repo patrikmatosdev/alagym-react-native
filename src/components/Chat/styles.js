@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 10,
     paddingTop: 15,
+    backgroundColor: '#ffffff',
   },
 });
 

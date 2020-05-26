@@ -13,17 +13,18 @@ const Header = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.containerLogo} />
-      <View style={styles.containerButtons}>
+      <View style={styles.containerButton}>
         <TouchableOpacity
           style={styles.button}
           onPress={() => openScreens('Search')}>
-          <IconButton icon="magnify" size={28} />
+          <IconButton icon="magnify" size={24} />
         </TouchableOpacity>
+      </View>
+      <View style={styles.containerButton}>
         <TouchableOpacity
           onPress={() => openScreens('Messeger')}
           style={styles.button}>
-          <IconButton icon="forum" size={28} />
+          <IconButton icon="forum" size={24} />
         </TouchableOpacity>
       </View>
     </View>

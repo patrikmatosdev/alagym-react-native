@@ -5,7 +5,7 @@ import AvatarBox from './AvatarBox';
 import DescriptionBox from './DescriptionBox';
 import NotificationBox from './NotificationBox';
 
-export const BoxConvarsation = () => {
+export const BoxChat = () => {
   return (
     <TouchableOpacity style={styles.container}>
       <AvatarBox />
@@ -15,4 +15,4 @@ export const BoxConvarsation = () => {
   );
 };
 
-export default BoxConvarsation;
+export default BoxChat;
