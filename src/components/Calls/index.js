@@ -1,10 +1,23 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
+import BoxContact from '../Contacts/BoxContact/index';
+import styles from './styles';
 
 export const Calls = () => {
   return (
-    <View>
-      <Text>Calls</Text>
+    <View style={styles.container}>
+      <ScrollView>
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+        <BoxContact />
+      </ScrollView>
     </View>
   );
 };
