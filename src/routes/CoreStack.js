@@ -13,8 +13,13 @@ const CoreStack = () => {
       <Stack.Screen
         options={{
           title: 'AlaGym',
+          headerTitleStyle: {
+            color: '#ffffff',
+            fontSize: 30,
+            fontWeight: 'bold',
+          },
           headerStyle: {
-            backgroundColor: '#ffffff',
+            backgroundColor: '#191970',
             elevation: 0,
             shadowOpacity: 0,
           },
@@ -39,8 +44,12 @@ const CoreStack = () => {
         component={MessengerTab}
         options={{
           title: 'Chat',
+          headerTintColor: '#ffffff',
+          headerTitleStyle: {
+            color: '#ffffff',
+          },
           headerStyle: {
-            backgroundColor: '#ffffff',
+            backgroundColor: '#191970',
             elevation: 0,
             shadowOpacity: 0,
           },

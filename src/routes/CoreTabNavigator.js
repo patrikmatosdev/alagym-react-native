@@ -13,7 +13,7 @@ const CoreTabNavigator = () => {
   return (
     <Tab.Navigator
       initialRouteName="Home"
-      style={{backgroundColor: '#ffffff'}}
+      style={{backgroundColor: '#191970'}}
       screenOptions={{
         tabBarIcon: ({color}) => (
           <MaterialCommunityIcons name="home" color={color} size={24} />
@@ -21,7 +21,7 @@ const CoreTabNavigator = () => {
       }}
       tabBarOptions={{
         activeTintColor: '#EEAB00',
-        inactiveTintColor: '#BBBBBB',
+        inactiveTintColor: '#ffffff',
         indicatorStyle: {backgroundColor: '#EEAB00'},
         labelStyle: {fontFamily: 'Righteous, Cursive'},
         style: {backgroundColor: '#fffff'},

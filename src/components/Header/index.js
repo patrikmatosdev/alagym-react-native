@@ -17,14 +17,14 @@ const Header = () => {
         <TouchableOpacity
           style={styles.button}
           onPress={() => openScreens('Search')}>
-          <IconButton icon="magnify" size={24} />
+          <IconButton icon="magnify" color="#ffffff" size={24} />
         </TouchableOpacity>
       </View>
       <View style={styles.containerButton}>
         <TouchableOpacity
           onPress={() => openScreens('Messeger')}
           style={styles.button}>
-          <IconButton icon="forum" size={24} />
+          <IconButton icon="forum" color="#ffffff" size={24} />
         </TouchableOpacity>
       </View>
     </View>

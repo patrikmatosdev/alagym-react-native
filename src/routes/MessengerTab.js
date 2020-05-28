@@ -11,29 +11,31 @@ const MessengerTab = () => {
   return (
     <Tab.Navigator
       initialRouteName="Chat"
-      style={{backgroundColor: '#ffff'}}
+      style={{backgroundColor: '#191970'}}
       screenOptions={{
         tabBarIcon: ({color}) => (
           <MaterialCommunityIcons name="home" color={color} size={24} />
         ),
       }}
-      // tabBarOptions={{
-      //   activeTintColor: '#EEAB00',
-      //   inactiveTintColor: '#BBBBBB',
-      //   indicatorStyle: {backgroundColor: '#EEAB00'},
-      //   labelStyle: {fontFamily: 'Righteous, Cursive'},
-      //   style: {backgroundColor: '#fffff'},
-      //   showIcon: true,
-      //   showLabel: false,
-      // }}
-    >
+      tabBarOptions={{
+        activeTintColor: '#EEAB00',
+        inactiveTintColor: '#ffffff',
+        indicatorStyle: {backgroundColor: '#EEAB00'},
+        labelStyle: {fontFamily: 'Righteous, Cursive'},
+        style: {backgroundColor: '#fffff'},
+        showIcon: true,
+      }}>
       <Tab.Screen
         name="Chat"
         component={Chat}
         options={{
           tabBarLabel: 'Conversas',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="home" color={color} size={24} />
+            <MaterialCommunityIcons
+              name="cellphone-message"
+              color={color}
+              size={24}
+            />
           ),
         }}
       />
@@ -43,7 +45,11 @@ const MessengerTab = () => {
         options={{
           tabBarLabel: 'Chamadas',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="home" color={color} size={24} />
+            <MaterialCommunityIcons
+              name="phone-in-talk"
+              color={color}
+              size={24}
+            />
           ),
         }}
       />
@@ -53,7 +59,11 @@ const MessengerTab = () => {
         options={{
           tabBarLabel: 'Contatos',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="home" color={color} size={24} />
+            <MaterialCommunityIcons
+              name="account-supervisor-circle"
+              color={color}
+              size={24}
+            />
           ),
         }}
       />

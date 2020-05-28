@@ -1,22 +1,13 @@
 import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
-import BoxContact from '../Contacts/BoxContact/index';
 import styles from './styles';
+import BoxCall from './BoxCall';
 
 export const Calls = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
-        <BoxContact />
+        <BoxCall />
       </ScrollView>
     </View>
   );

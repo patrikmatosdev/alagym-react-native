@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    backgroundColor: '#eeeeee',
+    // backgroundColor: '#eeeeee',
     borderRadius: 100,
   },
 });

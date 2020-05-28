@@ -5,7 +5,7 @@ import {AvatarBox} from './AvatarBox/index';
 import DetailsBox from './DetailsBox';
 import IconBox from './IconBox';
 
-const BoxContact = () => {
+const BoxCall = () => {
   return (
     <View style={styles.container}>
       <AvatarBox />
@@ -15,4 +15,4 @@ const BoxContact = () => {
   );
 };
 
-export default BoxContact;
+export default BoxCall;

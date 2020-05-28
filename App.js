@@ -8,7 +8,7 @@ import CoreTabNavigator from './src/routes/CoreTabNavigator';
 const App = () => {
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor="#ffff" barStyle="dark-content" />
+      <StatusBar backgroundColor="#191970" barStyle="dark-content" />
       <CoreStack />
     </NavigationContainer>
   );
