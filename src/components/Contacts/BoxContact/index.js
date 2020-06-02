@@ -4,11 +4,11 @@ import styles from './styles';
 import AvatarBox from './AvatarBox';
 import DetailsBox from './DetailsBox';
 
-const BoxContact = () => {
+const BoxContact = ({avatar, surname, name, status}) => {
   return (
     <View style={styles.container}>
-      <AvatarBox />
-      <DetailsBox />
+      <AvatarBox avatar={avatar} />
+      <DetailsBox name={name} surname={surname} status={status} />
     </View>
   );
 };
