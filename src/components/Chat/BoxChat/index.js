@@ -5,12 +5,19 @@ import AvatarBox from './AvatarBox';
 import DescriptionBox from './DescriptionBox';
 import NotificationBox from './NotificationBox';
 
-export const BoxChat = () => {
+export const BoxChat = ({
+  avatar,
+  menssage,
+  name,
+  surname,
+  hour,
+  notification,
+}) => {
   return (
     <TouchableOpacity style={styles.container}>
-      <AvatarBox />
-      <DescriptionBox />
-      <NotificationBox />
+      <AvatarBox avatar={avatar} />
+      <DescriptionBox name={name} surname={surname} menssage={menssage} />
+      <NotificationBox hour={hour} notification={notification} />
     </TouchableOpacity>
   );
 };
