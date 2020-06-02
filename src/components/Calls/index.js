@@ -8,6 +8,15 @@ export const Calls = () => {
     <View style={styles.container}>
       <ScrollView>
         <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
+        <BoxCall />
       </ScrollView>
     </View>
   );
