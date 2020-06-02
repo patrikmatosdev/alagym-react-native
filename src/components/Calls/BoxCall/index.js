@@ -5,11 +5,17 @@ import {AvatarBox} from './AvatarBox/index';
 import DetailsBox from './DetailsBox';
 import IconBox from './IconBox';
 
-const BoxCall = () => {
+const BoxCall = ({avatar, name, surname, hour, iconStatus, label}) => {
   return (
     <View style={styles.container}>
-      <AvatarBox />
-      <DetailsBox />
+      <AvatarBox avatar={avatar} />
+      <DetailsBox
+        name={name}
+        surname={surname}
+        hour={hour}
+        iconStatus={iconStatus}
+        label={label}
+      />
       <IconBox />
     </View>
   );

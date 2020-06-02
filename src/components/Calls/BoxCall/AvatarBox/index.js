@@ -3,11 +3,11 @@ import {View, Text, Image} from 'react-native';
 import styles from './styles';
 import Patrik from '../../../../assets/img/patrik.jpg';
 
-export const AvatarBox = () => {
+export const AvatarBox = ({avatar}) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerAvatar}>
-        <Image source={Patrik} style={styles.image} />
+        <Image source={avatar} style={styles.image} />
       </View>
     </View>
   );
