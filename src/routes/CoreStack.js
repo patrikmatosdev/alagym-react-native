@@ -43,7 +43,7 @@ const CoreStack = () => {
         name="Messeger"
         component={MessengerTab}
         options={{
-          title: 'Chat',
+          title: 'Messenger',
           headerTintColor: '#ffffff',
           headerTitleStyle: {
             color: '#ffffff',
