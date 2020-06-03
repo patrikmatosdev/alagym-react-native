@@ -93,7 +93,7 @@ const CoreStack = () => {
               </View>
               <View
                 style={{
-                  paddingLeft: 10,
+                  paddingHorizontal: 10,
                   width: '100%',
                   justifyContent: 'center',
                 }}>
@@ -111,20 +111,33 @@ const CoreStack = () => {
           headerRight: () => (
             <View
               style={{
-                width: '100%',
                 flexDirection: 'row',
-                backgroundColor: ' red',
+                height: '100%',
                 alignItems: 'center',
-                justifyContent: 'center',
               }}>
-              <TouchableOpacity>
-                <IconButton icon="camera" color="#ffffff" size={24} />
+              <TouchableOpacity style={{paddingRight: 5}}>
+                <IconButton
+                  icon="camera"
+                  style={{margin: 0}}
+                  color="#ffffff"
+                  size={28}
+                />
               </TouchableOpacity>
-              <TouchableOpacity>
-                <IconButton icon="phone" color={'#ffffff'} size={24} />
+              <TouchableOpacity style={{paddingRight: 5}}>
+                <IconButton
+                  icon="phone"
+                  style={{margin: 0}}
+                  color={'#ffffff'}
+                  size={28}
+                />
               </TouchableOpacity>
-              <TouchableOpacity>
-                <IconButton icon="menu" color="#ffffff" size={24} />
+              <TouchableOpacity style={{paddingRight: 5}}>
+                <IconButton
+                  style={{margin: 0}}
+                  icon="menu"
+                  color="#ffffff"
+                  size={28}
+                />
               </TouchableOpacity>
             </View>
           ),
