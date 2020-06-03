@@ -115,28 +115,28 @@ const CoreStack = () => {
                 height: '100%',
                 alignItems: 'center',
               }}>
-              <TouchableOpacity style={{paddingRight: 5}}>
+              <TouchableOpacity style={{paddingRight: 9}}>
                 <IconButton
                   icon="camera"
                   style={{margin: 0}}
                   color="#ffffff"
-                  size={28}
+                  size={24}
                 />
               </TouchableOpacity>
-              <TouchableOpacity style={{paddingRight: 5}}>
+              <TouchableOpacity style={{paddingRight: 9}}>
                 <IconButton
                   icon="phone"
                   style={{margin: 0}}
                   color={'#ffffff'}
-                  size={28}
+                  size={24}
                 />
               </TouchableOpacity>
-              <TouchableOpacity style={{paddingRight: 5}}>
+              <TouchableOpacity style={{paddingRight: 9}}>
                 <IconButton
                   style={{margin: 0}}
                   icon="menu"
                   color="#ffffff"
-                  size={28}
+                  size={24}
                 />
               </TouchableOpacity>
             </View>
