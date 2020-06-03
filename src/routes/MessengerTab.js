@@ -3,14 +3,14 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Calls from '../components/Calls/index';
 import Contacts from '../components/Contacts/';
-import Chat from '../components/Chat/index';
+import Messenger from '../components/Messenger/index';
 
 const Tab = createMaterialTopTabNavigator();
 
 const MessengerTab = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Chat"
+      initialRouteName="Messenger"
       style={{backgroundColor: '#191970'}}
       screenOptions={{
         tabBarIcon: ({color}) => (
@@ -26,8 +26,8 @@ const MessengerTab = () => {
         showIcon: true,
       }}>
       <Tab.Screen
-        name="Chat"
-        component={Chat}
+        name="Messenger"
+        component={Messenger}
         options={{
           tabBarLabel: 'Conversas',
           tabBarIcon: ({color}) => (

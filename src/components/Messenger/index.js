@@ -1,14 +1,14 @@
 import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
 import styles from './styles';
-import BoxChat from './BoxChat';
+import BoxMessenger from './BoxMessenger';
 import Avat from '../../assets/img/patrik.jpg';
 
-const Chat = () => {
+const Messenger = () => {
   return (
     <View style={styles.cointainer}>
       <ScrollView>
-        <BoxChat
+        <BoxMessenger
           name="Patrik"
           surname="Matos"
           menssage="Minha primeira Mensagem!"
@@ -21,4 +21,4 @@ const Chat = () => {
   );
 };
 
-export default Chat;
+export default Messenger;

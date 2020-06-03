@@ -5,7 +5,7 @@ import AvatarBox from './AvatarBox';
 import DescriptionBox from './DescriptionBox';
 import NotificationBox from './NotificationBox';
 
-export const BoxChat = ({
+export const BoxMessenger = ({
   avatar,
   menssage,
   name,
@@ -22,4 +22,4 @@ export const BoxChat = ({
   );
 };
 
-export default BoxChat;
+export default BoxMessenger;
