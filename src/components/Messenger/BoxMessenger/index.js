@@ -12,9 +12,10 @@ export const BoxMessenger = ({
   surname,
   hour,
   notification,
+  onPress,
 }) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <AvatarBox avatar={avatar} />
       <DescriptionBox name={name} surname={surname} menssage={menssage} />
       <NotificationBox hour={hour} notification={notification} />
