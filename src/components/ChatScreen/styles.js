@@ -15,19 +15,17 @@ const styles = StyleSheet.create({
     flexShrink: 0,
     flexBasis: 60,
     flexDirection: 'row',
-    backgroundColor: 'red',
     padding: 10,
   },
 
   containerInput: {
     flex: 1,
-    backgroundColor: 'red',
   },
 
   containerButton: {
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 80,
+    flexBasis: 40,
   },
 });
 
