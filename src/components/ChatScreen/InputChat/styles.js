@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 15,
-    // padding: 10,
+    padding: 10,
     overflow: 'hidden',
     backgroundColor: '#ffffff',
     flexDirection: 'row',

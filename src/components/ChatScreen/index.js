@@ -1,7 +1,8 @@
 import React from 'react';
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import InputChat from './InputChat';
+import {IconButton} from 'react-native-paper';
 
 const ChatScreen = () => {
   return (
@@ -66,9 +67,14 @@ const ChatScreen = () => {
         <View style={styles.containerInput}>
           <InputChat />
         </View>
-        <View style={styles.containerButton}>
-          <Text>oi</Text>
-        </View>
+        <TouchableOpacity style={styles.containerButton}>
+          <IconButton
+            size={50}
+            icon="send-circle"
+            color="blue"
+            style={styles.button}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   );

@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   containerInputs: {
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 60,
+    flexBasis: 65,
     flexDirection: 'row',
     padding: 10,
   },
@@ -25,7 +25,14 @@ const styles = StyleSheet.create({
   containerButton: {
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 40,
+    flexBasis: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  button: {
+    margin: 0,
+    padding: 0,
   },
 });
 
