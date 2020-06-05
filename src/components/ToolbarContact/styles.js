@@ -24,14 +24,15 @@ const styles = StyleSheet.create({
 
   containerButtons: {
     flex: 1,
+    // width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingLeft: 10,
+    // justifyContent: 'space-around',
+    // paddingLeft: 10,
   },
 
   containerButton: {
-    paddingRight: 5,
+    paddingLeft: 10,
   },
 
   iconButton: {

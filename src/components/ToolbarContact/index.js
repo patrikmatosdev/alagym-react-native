@@ -37,10 +37,10 @@ const ToolbarContact = () => {
       <TouchableOpacity disabled={true} style={styles.containerButtons}>
         <TouchableOpacity style={styles.containerButton}>
           <IconButton
-            icon="camera"
+            icon="video"
             style={styles.iconButton}
             color="#ffffff"
-            size={24}
+            size={26}
           />
         </TouchableOpacity>
         <TouchableOpacity style={styles.containerButton}>
@@ -48,15 +48,15 @@ const ToolbarContact = () => {
             icon="phone"
             style={styles.iconButton}
             color={'#ffffff'}
-            size={24}
+            size={26}
           />
         </TouchableOpacity>
         <TouchableOpacity style={styles.containerButton}>
           <IconButton
             style={styles.iconButton}
-            icon="menu"
+            icon="dots-vertical"
             color="#ffffff"
-            size={24}
+            size={26}
           />
         </TouchableOpacity>
       </TouchableOpacity>
