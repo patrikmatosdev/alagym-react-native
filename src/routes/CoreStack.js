@@ -6,6 +6,8 @@ import Search from '../view/Search/index';
 import MessengerTab from './MessengerTab';
 import Chat from '../components/ChatScreen/index';
 import ToolbarContact from '../components/ToolbarContact/index';
+import ContactDescription from '../components/ContactDescription/index';
+import ToolbarImage from '../components/ToolbarImage';
 
 const Stack = createStackNavigator();
 
@@ -72,6 +74,23 @@ const CoreStack = () => {
           },
 
           headerLeft: () => <ToolbarContact />,
+        }}
+      />
+      <Stack.Screen
+        name="ContactDescription"
+        component={ContactDescription}
+        options={{
+          headerTintColor: '#ffffff',
+          headerTitleStyle: {
+            display: 'none',
+          },
+          headerStyle: {
+            backgroundColor: '#191970',
+            elevation: 0,
+            shadowOpacity: 0,
+            height: 300,
+          },
+          header: props => <ToolbarImage {...props} />,
         }}
       />
     </Stack.Navigator>

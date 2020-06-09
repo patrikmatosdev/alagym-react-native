@@ -9,15 +9,17 @@ import {useNavigation} from '@react-navigation/native';
 const ToolbarContact = () => {
   const navigation = useNavigation();
 
-  const openScreen = () => {
+  const openBack = () => {
     navigation.goBack();
+  };
+
+  const openScreen = routeName => {
+    navigation.navigate(routeName);
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        onPress={() => openScreen()}
-        style={styles.containerBack}>
+      <TouchableOpacity onPress={() => openBack()} style={styles.containerBack}>
         <View>
           <IconButton
             style={{margin: 0}}
@@ -30,7 +32,9 @@ const ToolbarContact = () => {
           <Avatar.Image size={42} source={Patrik} />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.containerProfile}>
+      <TouchableOpacity
+        onPress={() => openScreen('ContactDescription')}
+        style={styles.containerProfile}>
         <Text style={styles.title}>Patrik</Text>
         <Text style={styles.check}>visto por ultimo hoje às 17:00</Text>
       </TouchableOpacity>
