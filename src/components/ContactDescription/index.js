@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import style from './styles';
+import BoxInformation from './BoxInformation';
 
 const ContactDescription = () => {
   return (
-    <View>
-      <Text>Oi</Text>
+    <View style={style.container}>
+      <BoxInformation />
     </View>
   );
 };

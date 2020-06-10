@@ -11,7 +11,7 @@ const ToolbarImage = () => {
   const openBack = () => {
     navigation.goBack();
   };
-
+  /* @TODO - ORGANIZATION CODE **/
   return (
     <View style={styles.container}>
       <View style={styles.containerIcons}>
