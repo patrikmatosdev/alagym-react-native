@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import {IconButton} from 'react-native-paper';
 
-const IconNumber = () => {
+const IconNumber = ({openMenssages}) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerContact}>
@@ -15,7 +15,7 @@ const IconNumber = () => {
         </View>
       </View>
       <View style={styles.containerIcons}>
-        <TouchableOpacity style={styles.colIcon}>
+        <TouchableOpacity onPress={openMenssages} style={styles.colIcon}>
           <IconButton icon="comment-text" size={26} color="#191970" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.colIcon}>

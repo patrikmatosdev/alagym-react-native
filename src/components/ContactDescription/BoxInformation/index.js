@@ -5,12 +5,12 @@ import Status from './Status';
 import Title from './Title';
 import IconNumber from './IconNumber';
 
-const BoxInformation = () => {
+const BoxInformation = ({openMenssages}) => {
   return (
     <View style={styles.container}>
       <Title />
       <Status />
-      <IconNumber />
+      <IconNumber openMenssages={openMenssages} />
     </View>
   );
 };
