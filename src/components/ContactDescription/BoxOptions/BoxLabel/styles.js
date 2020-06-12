@@ -3,11 +3,13 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#cccccc',
+    justifyContent: 'center',
   },
 
-  row: {
-    marginBottom: 10,
+  // @TODO - COLOR PROPS
+  label: {
+    fontSize: 16,
+    color: 'red',
   },
 });
 

@@ -2,12 +2,11 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#cccccc',
-  },
-
-  row: {
-    marginBottom: 10,
+    flexGrow: 0,
+    flexShrink: 0,
+    flexBasis: 60,
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
   },
 });
 

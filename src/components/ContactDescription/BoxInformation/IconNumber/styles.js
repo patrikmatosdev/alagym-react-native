@@ -5,6 +5,23 @@ const styles = StyleSheet.create({
     borderTopColor: '#ccc',
     borderTopWidth: 0.5,
     paddingTop: 10,
+    flexDirection: 'row',
+  },
+
+  containerContact: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+
+  containerIcons: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+
+  colIcon: {
+    flex: 1,
   },
 
   number: {

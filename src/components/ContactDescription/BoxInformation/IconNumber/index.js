@@ -1,6 +1,7 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import styles from './styles';
+import {IconButton} from 'react-native-paper';
 
 const IconNumber = () => {
   return (
@@ -12,6 +13,17 @@ const IconNumber = () => {
         <View style={styles.containerType}>
           <Text style={styles.labelType}>Celular</Text>
         </View>
+      </View>
+      <View style={styles.containerIcons}>
+        <TouchableOpacity style={styles.colIcon}>
+          <IconButton icon="comment-text" size={26} color="blue" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.colIcon}>
+          <IconButton icon="phone-in-talk" size={26} color="blue" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.colIcon}>
+          <IconButton icon="video" size={26} color="blue" />
+        </TouchableOpacity>
       </View>
     </View>
   );
