@@ -16,13 +16,13 @@ const IconNumber = () => {
       </View>
       <View style={styles.containerIcons}>
         <TouchableOpacity style={styles.colIcon}>
-          <IconButton icon="comment-text" size={26} color="blue" />
+          <IconButton icon="comment-text" size={26} color="#191970" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.colIcon}>
-          <IconButton icon="phone-in-talk" size={26} color="blue" />
+          <IconButton icon="phone-in-talk" size={26} color="#191970" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.colIcon}>
-          <IconButton icon="video" size={26} color="blue" />
+          <IconButton icon="video" size={26} color="#191970" />
         </TouchableOpacity>
       </View>
     </View>
