@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 420,
+    flexBasis: 350,
   },
 
   containerImage: {

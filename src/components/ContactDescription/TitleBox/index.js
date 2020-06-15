@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles';
 
-const Title = () => {
+const TitleBox = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Recado e número de telefone</Text>
@@ -10,4 +10,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default TitleBox;

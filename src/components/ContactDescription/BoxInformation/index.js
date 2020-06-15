@@ -2,13 +2,13 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles';
 import Status from './Status';
-import Title from './Title';
+import TitleBox from '../TitleBox';
 import IconNumber from './IconNumber';
 
 const BoxInformation = ({openMenssages}) => {
   return (
     <View style={styles.container}>
-      <Title />
+      <TitleBox />
       <Status />
       <IconNumber openMenssages={openMenssages} />
     </View>
