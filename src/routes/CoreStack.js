@@ -8,6 +8,7 @@ import Chat from '../components/ChatScreen/index';
 import ToolbarContact from '../components/ToolbarContact/index';
 import ContactDescription from '../components/ContactDescription/index';
 import ToolbarImage from '../components/ToolbarImage';
+import {Contacts} from '../components/Contacts/index';
 
 const Stack = createStackNavigator();
 
