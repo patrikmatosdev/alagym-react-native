@@ -1,54 +1,14 @@
 import React from 'react';
-import {View} from 'react-native';
-import {Button} from 'react-native-paper';
+import {View, Text} from 'react-native';
 import styles from './styles';
+import SocialButton from './SocialButton';
 
 const SocialButtons = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.containerSocial}>
-        <View style={styles.socialButtons}>
-          <Button
-            icon="heart"
-            color="#ddd"
-            labelStyle={{
-              fontSize: 10,
-              fontWeight: 'bold',
-              color: '#aaa',
-              fontFamily: 'inherit',
-            }}>
-            Curtir
-          </Button>
-        </View>
-
-        <View style={styles.socialButtons}>
-          <Button
-            icon="comment"
-            color="#ddd"
-            labelStyle={{
-              fontSize: 10,
-              fontWeight: 'bold',
-              color: '#aaa',
-              fontFamily: 'inherit',
-            }}>
-            Comentar
-          </Button>
-        </View>
-
-        <View style={styles.socialButtons}>
-          <Button
-            icon="subdirectory-arrow-left"
-            color="#ddd"
-            labelStyle={{
-              fontSize: 10,
-              fontWeight: 'bold',
-              color: '#aaa',
-              fontFamily: 'inherit',
-            }}>
-            Compartilhar
-          </Button>
-        </View>
-      </View>
+      <SocialButton icon="cards-heart" label="Curtir" />
+      <SocialButton icon="chat" label="Comentar" />
+      <SocialButton icon="share" label="Compartilhar" />
     </View>
   );
 };

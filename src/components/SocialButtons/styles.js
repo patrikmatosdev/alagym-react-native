@@ -2,21 +2,15 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    paddingTop: 20,
+    paddingBottom: 10,
     borderBottomColor: '#ffff',
     borderTopColor: '#ddd',
     borderLeftColor: '#ffff',
     borderRightColor: '#ffff',
     borderWidth: 1,
-  },
-
-  containerSocial: {
-    flexDirection: 'row',
-    paddingVertical: 10,
-  },
-
-  socialButtons: {
     flex: 1,
+    flexDirection: 'row',
   },
 });
 
