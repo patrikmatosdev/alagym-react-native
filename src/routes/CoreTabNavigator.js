@@ -44,7 +44,7 @@ const CoreTabNavigator = () => {
         component={MyWorkouts}
         options={{
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="dumbbell" color={color} size={24} />
+            <MaterialCommunityIcons name="run-fast" color={color} size={24} />
           ),
         }}
       />
