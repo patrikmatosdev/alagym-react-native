@@ -2,23 +2,25 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'column',
-    marginRight: 10,
     width: 120,
     height: 170,
     borderRadius: 7,
     overflow: 'hidden',
-    backgroundColor: '#eef',
+    backgroundColor: '#eeeeee',
   },
 
   image: {
     width: '100%',
-    height: 110,
+    height: '100%',
   },
 
   containerTitle: {
-    height: 50,
+    bottom: 0,
+    width: '100%',
+    position: 'absolute',
+    backgroundColor: '#eeeeee',
     justifyContent: 'center',
+    alignItems: 'center',
     paddingVertical: 10,
   },
 

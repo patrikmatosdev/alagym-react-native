@@ -12,20 +12,14 @@ import ListWorkouts from './ListWorkouts';
 const BoxWorkouts = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.containerTitle}>
-        <Title />
+      <View style={styles.columnWorkout}>
+        <ImageTraining title="Casa" image={imageA} />
       </View>
-
-      <View style={styles.containerImage}>
-        <ImageTraining title="Todos os Treinos" background={imageA} />
-        <ImageTraining title="Personal" background={imageB} />
-        <ImageTraining title="Academia" background={imageC} />
+      <View style={styles.columnWorkout}>
+        <ImageTraining title="Academias" image={imageB} />
       </View>
-
-      <View style={styles.containerList}>
-        <ListWorkouts title="Treino A" description="Ombros, Braço, Lombar" />
-        <ListWorkouts title="Treino B" description="Pernas, Glúteos, Abdomen" />
-        <ListWorkouts title="Treino C" description="Pernas, Glúteos, Abdomen" />
+      <View style={styles.columnWorkout}>
+        <ImageTraining title="Treino C" image={imageC} />
       </View>
     </View>
   );

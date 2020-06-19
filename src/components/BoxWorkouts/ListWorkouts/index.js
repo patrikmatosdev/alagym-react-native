@@ -1,27 +1,34 @@
 import React from 'react';
+import {View, Text} from 'react-native';
 import styles from './styles';
 import {List} from 'react-native-paper';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import ButtonIcon from './ButtonIcon/index';
 
 const ListWorkouts = props => {
   return (
-    <TouchableOpacity style={styles.container}>
-      <List.Item
-        title={props.title}
-        description={props.description}
-        left={props => (
-          <List.Icon
-            {...props}
-            icon="dumbbell"
-            color="#aaaa"
-            size={props.size}
-          />
-        )}
-        right={props => (
-          <List.Icon {...props} icon="chevron-right" color="#aaaa" size={35} />
-        )}
+    <View style={styles.container}>
+      <ButtonIcon
+        title="Treino A"
+        description="Peitoral, braços, pernas"
+        icon="dumbbell"
       />
-    </TouchableOpacity>
+      <ButtonIcon
+        title="Treino A"
+        description="Peitoral, braços, pernas"
+        icon="dumbbell"
+      />
+      <ButtonIcon
+        title="Treino A"
+        description="Peitoral, braços, pernas"
+        icon="dumbbell"
+      />
+      <ButtonIcon
+        title="Treino A"
+        description="Peitoral, braços, pernas"
+        icon="dumbbell"
+      />
+    </View>
   );
 };
 

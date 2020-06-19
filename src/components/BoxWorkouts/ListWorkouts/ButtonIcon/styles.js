@@ -2,16 +2,12 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
+    flexBasis: 80,
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 60,
+    borderBottomWidth: 0.5,
+    borderBottomColor: '#dddddd',
     justifyContent: 'center',
-  },
-
-  title: {
-    fontSize: 36,
-    fontWeight: 'bold',
-    fontFamily: 'Roboto',
   },
 });
 

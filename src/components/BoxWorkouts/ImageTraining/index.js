@@ -6,14 +6,12 @@ import {TouchableOpacity} from 'react-native';
 
 const ImageTraining = props => {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity>
-        <ImageBackground source={props.background} style={styles.image} />
-        <View style={styles.containerTitle}>
-          <Text style={styles.title}>{props.title}</Text>
-        </View>
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity style={styles.container}>
+      <ImageBackground source={props.image} style={styles.image} />
+      <View style={styles.containerTitle}>
+        <Text style={styles.title}>{props.title}</Text>
+      </View>
+    </TouchableOpacity>
   );
 };
 
