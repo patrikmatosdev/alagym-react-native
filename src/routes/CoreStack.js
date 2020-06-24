@@ -9,6 +9,7 @@ import ToolbarContact from '../components/ToolbarContact/index';
 import ContactDescription from '../components/ContactDescription/index';
 import ToolbarImage from '../components/ToolbarImage';
 import {Contacts} from '../components/Contacts/index';
+import Exercises from '../components/Exercises/index';
 
 const Stack = createStackNavigator();
 
@@ -92,6 +93,20 @@ const CoreStack = () => {
             height: 300,
           },
           header: props => <ToolbarImage {...props} />,
+        }}
+      />
+      <Stack.Screen
+        name="Exercises"
+        component={Exercises}
+        options={{
+          title: 'Exercícios',
+          headerTitleAlign: 'left',
+          headerTintColor: '#ffffff',
+          headerStyle: {
+            backgroundColor: '#191970',
+            elevation: 0,
+            shadowOpacity: 0,
+          },
         }}
       />
     </Stack.Navigator>

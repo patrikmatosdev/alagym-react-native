@@ -7,6 +7,11 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     overflow: 'hidden',
     backgroundColor: '#eeeeee',
+    elevation: 10,
+  },
+
+  containerImage: {
+    position: 'relative',
   },
 
   image: {
@@ -16,15 +21,16 @@ const styles = StyleSheet.create({
 
   containerTitle: {
     bottom: 0,
-    width: '100%',
     position: 'absolute',
-    backgroundColor: '#eeeeee',
+    width: '100%',
+    backgroundColor: '#191970',
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 10,
   },
 
   title: {
+    color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',

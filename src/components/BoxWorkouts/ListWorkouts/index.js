@@ -5,10 +5,11 @@ import {List} from 'react-native-paper';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import ButtonIcon from './ButtonIcon/index';
 
-const ListWorkouts = props => {
+const ListWorkouts = ({openExercises}) => {
   return (
     <View style={styles.container}>
       <ButtonIcon
+        onPress={openExercises}
         title="Treino A"
         description="Peitoral, braços, pernas"
         icon="dumbbell"
