@@ -100,12 +100,9 @@ const CoreStack = () => {
         component={Exercises}
         options={{
           title: 'Exercícios',
-          headerTitleAlign: 'left',
           headerTintColor: '#ffffff',
           headerStyle: {
             backgroundColor: '#191970',
-            elevation: 0,
-            shadowOpacity: 0,
           },
         }}
       />

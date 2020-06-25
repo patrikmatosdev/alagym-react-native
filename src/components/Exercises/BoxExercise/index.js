@@ -3,14 +3,14 @@ import {View, Text} from 'react-native';
 import styles from './styles';
 import MediaExercise from './MediaExercise';
 import TitleExercise from './TitleExercise';
-import DetailsExercise from './DetailsExercise';
+import TabelExercise from './TabelExercise';
 
 const BoxExercise = () => {
   return (
     <View style={styles.container}>
       <MediaExercise />
       <TitleExercise />
-      <DetailsExercise />
+      <TabelExercise />
     </View>
   );
 };
