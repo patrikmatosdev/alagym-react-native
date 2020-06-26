@@ -3,7 +3,7 @@ import {View, Text, ImageBackground} from 'react-native';
 import styles from './styles';
 import {TouchableOpacity} from 'react-native';
 
-const ImageTraining = props => {
+const ButtonImage = props => {
   return (
     <TouchableOpacity style={styles.container}>
       <View style={styles.containerImage}>
@@ -16,4 +16,4 @@ const ImageTraining = props => {
   );
 };
 
-export default ImageTraining;
+export default ButtonImage;

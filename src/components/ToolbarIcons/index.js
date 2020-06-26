@@ -4,7 +4,7 @@ import {IconButton} from 'react-native-paper';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
 
-const Header = () => {
+const ToolbarIcons = () => {
   const navigation = useNavigation();
 
   const openScreens = routeName => {
@@ -31,4 +31,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ToolbarIcons;

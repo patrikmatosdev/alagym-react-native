@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles';
-import ImageTraining from './ImageTraining';
+import ButtonImage from './ButtonImage';
 
 import imageA from '../../assets/img/trainingA.jpeg';
 import imageB from '../../assets/img/trainingB.jpeg';
@@ -11,13 +11,13 @@ const BoxWorkouts = () => {
   return (
     <View style={styles.container}>
       <View style={styles.columnWorkout}>
-        <ImageTraining title="Casa" image={imageA} />
+        <ButtonImage title="Casa" image={imageA} />
       </View>
       <View style={styles.columnWorkout}>
-        <ImageTraining title="Academias" image={imageB} />
+        <ButtonImage title="Academias" image={imageB} />
       </View>
       <View style={styles.columnWorkout}>
-        <ImageTraining title="Treino C" image={imageC} />
+        <ButtonImage title="Treino C" image={imageC} />
       </View>
     </View>
   );

@@ -1,15 +1,14 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import CoreTabNavigator from './CoreTabNavigator';
-import HeaderButtons from '../components/Header/index';
 import Search from '../view/Search/index';
 import MessengerTab from './MessengerTab';
 import Chat from '../components/ChatScreen/index';
 import ToolbarContact from '../components/ToolbarContact/index';
 import ContactDescription from '../components/ContactDescription/index';
 import ToolbarImage from '../components/ToolbarImage';
-import {Contacts} from '../components/Contacts/index';
 import Exercises from '../components/Exercises/index';
+import ToolbarIcons from '../components/ToolbarIcons/index';
 
 const Stack = createStackNavigator();
 
@@ -30,7 +29,7 @@ const CoreStack = () => {
             shadowOpacity: 0,
           },
 
-          headerRight: () => <HeaderButtons />,
+          headerRight: () => <ToolbarIcons />,
         }}
         name="Home"
         component={CoreTabNavigator}
