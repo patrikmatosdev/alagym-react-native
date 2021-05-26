@@ -3,12 +3,13 @@ import {createStackNavigator} from '@react-navigation/stack';
 import CoreTabNavigator from './CoreTabNavigator';
 import Search from '../view/Search/index';
 import MessengerTab from './MessengerTab';
-import Chat from '../components/ChatScreen/index';
+import Chat from '../view/ChatScreen/index';
 import ToolbarContact from '../components/ToolbarContact/index';
-import ContactDescription from '../components/ContactDescription/index';
+// import ContactDescription from '../components/ContactDescription/index';
 import ToolbarImage from '../components/ToolbarImage';
 import Exercises from '../components/Exercises/index';
 import ToolbarIcons from '../components/ToolbarIcons/index';
+import Home from '../view/Home';
 
 const Stack = createStackNavigator();
 
@@ -77,7 +78,7 @@ const CoreStack = () => {
           headerLeft: () => <ToolbarContact />,
         }}
       />
-      <Stack.Screen
+      {/* <Stack.Screen
         name="ContactDescription"
         component={ContactDescription}
         options={{
@@ -93,7 +94,7 @@ const CoreStack = () => {
           },
           header: props => <ToolbarImage {...props} />,
         }}
-      />
+      /> */}
       <Stack.Screen
         name="Exercises"
         component={Exercises}

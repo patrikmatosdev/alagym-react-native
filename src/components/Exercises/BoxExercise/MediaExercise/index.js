@@ -4,11 +4,11 @@ import styles from './styles';
 import Media from '../../../../assets/img/trainingC.jpeg';
 import ButtonBox from './ButtonBox';
 
-const MediaExercise = () => {
+const MediaExercise = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
-        <ImageBackground source={Media} style={styles.image} />
+        <ImageBackground source={{uri: props.img}} style={styles.image} />
       </View>
       <TouchableOpacity style={styles.containerButton}>
         <ButtonBox />

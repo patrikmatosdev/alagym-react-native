@@ -5,11 +5,11 @@ import MediaExercise from './MediaExercise';
 import TitleExercise from './TitleExercise';
 import TabelExercise from './TabelExercise';
 
-const BoxExercise = () => {
+const BoxExercise = (props) => {
   return (
-    <View style={styles.container}>
-      <MediaExercise />
-      <TitleExercise />
+    <View >
+      <MediaExercise img={props.img} />
+      <TitleExercise title={props.title} />
       <TabelExercise />
     </View>
   );

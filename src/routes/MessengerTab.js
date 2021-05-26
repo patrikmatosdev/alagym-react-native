@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Calls from '../components/Calls/index';
-import Contacts from '../components/Contacts/';
+// import Calls from '../components/Calls/index';
+// import Contacts from '../components/Contacts/';
 import Messenger from '../components/Messenger/index';
 
 const Tab = createMaterialTopTabNavigator();
@@ -39,7 +39,7 @@ const MessengerTab = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Calls"
         component={Calls}
         options={{
@@ -52,8 +52,8 @@ const MessengerTab = () => {
             />
           ),
         }}
-      />
-      <Tab.Screen
+      /> */}
+      {/* <Tab.Screen
         name="Contacts"
         component={Contacts}
         options={{
@@ -66,7 +66,7 @@ const MessengerTab = () => {
             />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };

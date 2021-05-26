@@ -3,10 +3,13 @@ import {View, Text} from 'react-native';
 import styles from './styles';
 import BoxExercise from '../BoxExercise';
 
-const ExerciseSlide = () => {
+const ExerciseSlide = props => {
   return (
-    <View style={styles.container}>
-      <BoxExercise />
+    <View style={styles.container} >
+      {console.warn(props)}
+      {!!props.data.map(exercise => {
+        return <BoxExercise title={exercise.title} />;
+      })}
     </View>
   );
 };
