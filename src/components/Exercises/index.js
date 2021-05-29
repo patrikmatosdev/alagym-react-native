@@ -4,6 +4,7 @@ import Swiper from 'react-native-swiper';
 import styles from './styles';
 import ExerciseSlide from './ExerciseSlide';
 import BoxExercise from './BoxExercise';
+import Loading from '../Loading';
 
 const axios = require('axios');
 
@@ -28,7 +29,7 @@ const Exercises = () => {
         errorMessage: '',
         data: response.data,
       });
-      console.warn(exerciseControl.data);
+      // console.warn(exerciseControl.data);
     } catch (error) {
       setExerciseControl({
         ...exerciseControl,
@@ -45,11 +46,7 @@ const Exercises = () => {
   let content = '';
 
   if (exerciseControl.loading) {
-    content = (
-      <View>
-        <Text>Carregando</Text>
-      </View>
-    );
+    content = <Loading text="Aguarde! Estamos buscando seus exercícios" />;
   } else if (exerciseControl.errorMessage) {
     content = (
       <View>
@@ -61,7 +58,7 @@ const Exercises = () => {
       <Swiper>
         {exerciseControl.data.map(exercise => {
           return (
-            <View style={{flex: 1}}>
+            <View key={exercise.id} style={{flex: 1}}>
               <BoxExercise img={exercise.media.img} title={exercise.title} />
             </View>
           );

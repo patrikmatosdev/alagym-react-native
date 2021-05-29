@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, ImageBackground, TouchableOpacity} from 'react-native';
 import styles from './styles';
-import Media from '../../../../assets/img/trainingC.jpeg';
 import ButtonBox from './ButtonBox';
 
 const MediaExercise = (props) => {

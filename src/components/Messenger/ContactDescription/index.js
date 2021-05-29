@@ -9,9 +9,9 @@ import BoxMedia from './BoxMedia';
 const ContactDescription = () => {
   const navigation = useNavigation();
 
-  const openMenssages = () => {
-    navigation.navigate('ChatScreen');
-  };
+  // const openMenssages = () => {
+  //   navigation.navigate('ChatScreen');
+  // };
 
   return (
     <ScrollView style={style.container}>
