@@ -2,43 +2,42 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 10,
+    flexBasis: 80,
+    width: '100%',
+   },
+
+   header: {
+    borderTopStartRadius: 4,
+    borderTopRightRadius: 4,
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 50,
+    flexBasis: 35,
     flexDirection: 'row',
-    borderBottomColor: '#ddd',
-    borderLeftColor: '#ddd',
-    borderRightColor: '#ddd',
-    borderTopColor: 0,
-    borderWidth: 1,
-  },
+    backgroundColor: '#191970',
+   },
 
-  containerSerie: {
-    flexGrow: 0,
-    flexShrink: 0,
-    flexBasis: 80,
-    justifyContent: 'center',
-    alignItems: 'center',
-    // backgroundColor: 'red',
-  },
-
-  containerRepetition: {
+   col1: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    // backgroundColor: 'blue',
-  },
+    alignSelf: 'center',
+   },
 
-  containerTime: {
+   col2: {
+    flex: 1,
+    alignSelf: 'center',
+   },
+
+   tabel: {
+    paddingVertical: 10,
+    backgroundColor: '#4682b4',
     flexGrow: 0,
     flexShrink: 0,
-    flexBasis: 80,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+    flexDirection: 'row',
+   },
 
   label: {
-    color: '#000000',
+    textAlign: 'center',
+    color: '#fff',
     fontWeight: 'bold',
   },
 });

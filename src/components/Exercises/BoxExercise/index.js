@@ -7,10 +7,10 @@ import TabelExercise from './TabelExercise';
 
 const BoxExercise = (props) => {
   return (
-    <View >
+    <View>
       <MediaExercise img={props.img} />
       <TitleExercise title={props.title} />
-      <TabelExercise />
+      <TabelExercise workouts={props.workouts} />
     </View>
   );
 };

@@ -29,7 +29,7 @@ const Exercises = () => {
         errorMessage: '',
         data: response.data,
       });
-      // console.warn(exerciseControl.data);
+      console.warn(exerciseControl.data);
     } catch (error) {
       setExerciseControl({
         ...exerciseControl,
@@ -59,7 +59,7 @@ const Exercises = () => {
         {exerciseControl.data.map(exercise => {
           return (
             <View key={exercise.id} style={{flex: 1}}>
-              <BoxExercise img={exercise.media.img} title={exercise.title} />
+              <BoxExercise img={exercise.media.img} title={exercise.title} workouts={exercise.workouts} />
             </View>
           );
         })}
